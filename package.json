@@ -3,10 +3,10 @@
   "author": "Marco Aurelio <thecoreh@gmail.com>",
   "version": "0.1.0",
   "dependencies": {
-    "express": "~4.9.0", 
-    "commander": "~2.3.0",
-    "lockfile": "~1.0.0",
-    "body-parser": "~1.8.2"
+    "body-parser": "^1.18.3",
+    "commander": "^2.19.0",
+    "express": "^4.16.4",
+    "lockfile": "^1.0.0"
   },
   "main": "lib",
   "bin": {
