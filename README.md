@@ -107,8 +107,12 @@ The CLI tool takes as argument a command to execute upon GitHub post-receive hoo
 hookshot 'echo "PUSHED!"'
 ```
 
-You can optionally specify an HTTP port via the `-p` flag (defaults to 3000) and a ref via the `-r` flag (defaults to all refs):
+You can specify following options:
+* HTTP port via the `-p` flag (defaults to 3000)
+* Refs via the `-r` flag (defaults to all refs)
+* Webhook path via the `-wp` flag (defaults to `/`)
+* Run action on startup with `-s`
 
 ```bash
-hookshot -r refs/heads/master -p 9001 'echo "pushed to master!"'
+hookshot -s -r refs/heads/master -p 9001 'echo "pushed to master!"'
 ```
